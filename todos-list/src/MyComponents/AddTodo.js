@@ -6,11 +6,10 @@ export const AddTodo = (props) => {
 
   const submit = (evnt) => {
     evnt.preventDefault();
-    if (!title || desc) {
+    if (!title || !desc) {
       alert('Title or description can not be blank')
     }
     AddTodo(title, desc)
-
   }
 
   return (
