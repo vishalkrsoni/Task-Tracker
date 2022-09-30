@@ -14,12 +14,12 @@ function App() {
     // deleting this way doesn't work
     // let index=todos.indexOf(todo)
     //todo.splice(index,i)
-    seetTodos(todos.filter((item)=>{
-      return item!==todo;
+    setTodos(todos.filter((item) => {
+      return item !== todo;
     }))
   }
 
-const [todos,seetTodos]=useState([
+  const [todos, setTodos] = useState([
     {
       sno: 1,
       title: 'shopping',
