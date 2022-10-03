@@ -47,42 +47,42 @@ function App() {
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos])
 
-//   return (
-//     <>
-//       <Router>
-//         <Header title='MyTodos' searchBar={false} />
-//         <AddTodo addTodo={addTodo} />
-//         <Todos todos={todos} onDelete={onDelete} />
-//         <Footer />
-//       </Router>
-//     </>
-//   );
-// }
-
-// export default App;
-
-return (
-  <>
-    <Router>
-      <Header title='MyTodos' searchBar={false} />
-      <Switch>
-        <Route path='/' render={() => {
-          return (
-            <>
-              <AddTodo addTodo={addTodo} />
-              <Todos todos={todos} onDelete={onDelete} />
-            </>)
-        }}>
-        </Route>
-        <Route path='/about'>
-          <About />
-        </Route>
-      </Switch>
-      <Footer />
-    </Router>
-  </>
-);
+  return (
+    <>
+      <Router>
+        <Header title='MyTodos' searchBar={false} />
+        <AddTodo addTodo={addTodo} />
+        <Todos todos={todos} onDelete={onDelete} />
+        <Footer />
+      </Router>
+    </>
+  );
 }
 
 export default App;
+
+// return (
+//   <>
+//     <Router>
+//       <Header title='MyTodos' searchBar={false} />
+//       <Switch>
+//         <Route path='/' render={() => {
+//           return (
+//             <>
+//               <AddTodo addTodo={addTodo} />
+//               <Todos todos={todos} onDelete={onDelete} />
+//             </>)
+//         }}>
+//         </Route>
+//         <Route path='/about'>
+//           <About />
+//         </Route>
+//       </Switch>
+//       <Footer />
+//     </Router>
+//   </>
+// );
+// }
+
+// export default App;
 
