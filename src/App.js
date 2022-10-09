@@ -6,12 +6,12 @@ import { AddTodo } from './MyComponents/AddTodo';
 import { About } from './MyComponents/About';
 import React, { useState, useEffect } from 'react';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from 'react-router-dom';
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from 'react-router-dom';
 
 function App() {
   let initTodo;
