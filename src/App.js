@@ -4,7 +4,7 @@ import Header from "./MyComponents/Header";
 import { Todos } from "./MyComponents/Todos";
 import { Footer } from "./MyComponents/Footer";
 import { AddTodo } from "./MyComponents/AddTodo";
-import { About } from "./MyComponents/About";
+// import { About } from "./MyComponents/About";
 import React, { useState, useEffect } from "react";
 
 // import {
